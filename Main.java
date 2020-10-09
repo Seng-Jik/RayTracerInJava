@@ -6,7 +6,7 @@ import runner.*;
 import scene.*;
 import sky.*;
 
-public class Program {
+public class Main {
     public static void main(String[] args) {
         int width = 1440 / 2;
         int height = 810 / 2;
