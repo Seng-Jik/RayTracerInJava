@@ -3,6 +3,7 @@ package exercise;
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.security.InvalidParameterException;
 import java.util.LinkedList;
@@ -33,6 +34,12 @@ public class QuestionSet {
 
     public void add(Question q) {
         questions.add(q);
+    }
+
+    public void writeToFile(String fileName) throws IOException {
+        FileWriter f = new FileWriter(fileName);
+        f.write(toString());
+        f.close();
     }
 
     public int size() {

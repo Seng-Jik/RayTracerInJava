@@ -53,6 +53,7 @@ public class Main {
         QuestionSet qs = new QuestionSet("马原试题库.txt");
         System.out.println("== All Questions ==");
         System.out.println(qs);
+        qs.writeToFile("AllQuestions.txt");
         System.out.println();
 
         System.out.println(" == Subset Questions ==");
@@ -60,6 +61,7 @@ public class Main {
         for(int i = 0; i < subsets.length; ++i) {
             System.out.println("-- Subset " + i + " --");
             System.out.println(subsets[i]);
+            subsets[i].writeToFile("QuestionSubset" + i + ".txt");
             System.out.println();
         }
     }
