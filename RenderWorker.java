@@ -1,27 +1,34 @@
-import java.util.List;
+import java.util.Random;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-public class Worker extends Thread {
+public class RenderWorker extends Thread {
 
     private Vec3[] imageBuffer;
-    private AtomicBoolean keep = new AtomicBoolean(true);
+    private AtomicBoolean keep;
     private int samples = 0;
     private Camera camera;
-    private List<SceneObject> scene;
+    private Scene scene;
 
-    public Worker(int width, int height, long seed, List<SceneObject> scene) {
+    public RenderWorker(
+        int width,
+        int height, 
+        Frustum frustum, 
+        Random random, 
+        Scene scene) {
+
+        keep = new AtomicBoolean(true);
         imageBuffer = new Vec3[width * height];
         for(int i = 0;i < imageBuffer.length;++i) 
             imageBuffer[i] = Vec3.zeros;
 
-        this.camera = new Camera(width, height, seed);
+        this.camera = new Camera(width, height, frustum, random);
         this.scene = scene;
     }
 
     public void run() {
         while(keep.get()) {
             synchronized(imageBuffer) {
-                camera.createImage(scene, imageBuffer);
+                camera.shot(scene, imageBuffer);
                 samples ++;
             }
             try {

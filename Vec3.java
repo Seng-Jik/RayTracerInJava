@@ -62,6 +62,18 @@ public class Vec3 {
         return div(length());
     }
 
+    public Vec3 lerpTo(Vec3 target, double t) {
+        return new Vec3(
+            (target.getX() - x) * t + x,
+            (target.getY() - y) * t + y,
+            (target.getZ() - z) * t + z
+        );
+    }
+
+    public Vec3 reflect(Vec3 panelNormal) {
+        return this.sub(panelNormal.mul(2 * this.dot(panelNormal)));
+    }
+
     public int asIntColor() {
         int r = (int)(x * 255);
         int g = (int)(y * 255);

@@ -1,16 +1,13 @@
 import java.util.Random;
 
-public class Diffuse implements Material {
+public class Diffuse extends LightMaterial {
 
-    private Vec3 color;
-
-    public Diffuse(Vec3 col) {
-        this.color = col;
+    public Diffuse(Vec3 col, Vec3 light) {
+        super(col, light);
     }
 
-    @Override
-    public Vec3 updateColor(Vec3 col) {
-        return col.mul(color);
+    public Diffuse(Vec3 col) {
+        super(col);
     }
 
     @Override

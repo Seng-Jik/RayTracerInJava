@@ -1,9 +1,9 @@
-public abstract class Sphere implements SceneObject {
+public abstract class Ball implements SceneObject {
 
     private Vec3 center;
     private double radius;
 
-    public Sphere(Vec3 center, double radius) {
+    public Ball(Vec3 center, double radius) {
         this.center = center;
         this.radius = radius;
     }

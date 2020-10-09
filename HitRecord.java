@@ -1,10 +1,12 @@
 public class HitRecord {
-    Ray ray = null;
-    Vec3 normal;
-    SceneObject sceneObject;
-    double t;
+    private Ray ray;
+    private Vec3 normal;
+    private SceneObject sceneObject;
+    private double t;
 
-    public HitRecord() {}
+    public HitRecord() {
+        ray = null;
+    }
     
     public HitRecord(Ray ray, Vec3 normal, double t, SceneObject sceneObj) {
         this.ray = ray;
