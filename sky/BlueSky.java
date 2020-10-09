@@ -1,3 +1,7 @@
+package sky;
+
+import raytracer.*;
+
 public class BlueSky implements Sky {
 
     @Override

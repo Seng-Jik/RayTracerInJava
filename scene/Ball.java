@@ -1,3 +1,7 @@
+package scene;
+
+import raytracer.*;
+
 public abstract class Ball implements SceneObject {
 
     private Vec3 center;

@@ -1,4 +1,7 @@
+package runner;
+
 import java.awt.image.BufferedImage;
+import raytracer.*;
 
 public class MasterImage {
     private Vec3[] masterBuffer;

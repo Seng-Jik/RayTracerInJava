@@ -1,3 +1,6 @@
+package material;
+
+import raytracer.*;
 
 public abstract class LightMaterial implements Material {
     private Vec3 color;

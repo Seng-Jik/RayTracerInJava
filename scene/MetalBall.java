@@ -1,3 +1,8 @@
+package scene;
+
+import raytracer.*;
+import material.DiffusedMetal;
+
 public class MetalBall extends Ball {
 
     private DiffusedMetal metal;

@@ -1,5 +1,8 @@
+package runner;
+
 import java.util.Random;
 import java.util.concurrent.atomic.AtomicBoolean;
+import raytracer.*;
 
 public class RenderWorker extends Thread {
 

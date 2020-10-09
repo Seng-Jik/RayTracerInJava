@@ -1,3 +1,8 @@
+package scene;
+
+import raytracer.*;
+import material.Diffuse;
+
 public class LightBall extends Ball{
 
     private Diffuse diffuse;

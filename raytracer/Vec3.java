@@ -1,3 +1,4 @@
+package raytracer;
 
 public class Vec3 {
     private double x, y, z;
@@ -24,6 +25,13 @@ public class Vec3 {
 
     public double dot(Vec3 a) {
         return x * a.x + y * a.y + z * a.z; 
+    }
+
+    public Vec3 cross(Vec3 a) {
+        return new Vec3(
+            y * a.getZ() - z * a.getY(),
+            -(x * a.getZ() - z * a.getX()),
+            x * a.getY() - y * a.getX());
     }
 
     public Vec3 sub(Vec3 a) {

@@ -1,3 +1,5 @@
+package raytracer;
+
 public class HitRecord {
     private Ray ray;
     private Vec3 normal;

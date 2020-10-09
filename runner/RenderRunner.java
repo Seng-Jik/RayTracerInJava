@@ -1,5 +1,8 @@
+package runner;
+
 import java.util.Random;
 import java.awt.Graphics;
+import raytracer.*;
 
 public class RenderRunner {
     private RenderWorker[] workers;

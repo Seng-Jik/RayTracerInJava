@@ -1,4 +1,7 @@
+package material;
+
 import java.util.Random;
+import raytracer.*;
 
 public class DiffusedMetal implements Material {
 

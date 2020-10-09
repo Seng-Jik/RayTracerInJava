@@ -1,3 +1,5 @@
+package raytracer;
+
 public class Ray {
     private Vec3 org, dir, normalDir;
     
