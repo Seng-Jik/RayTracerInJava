@@ -1,0 +1,24 @@
+马克思主义理论从狭义上说是;无产阶级争取自身解放和整个人类解放的学说体系;关于无产阶级斗争的性质、目的和解放条件的学说;马克思和恩格斯创立的基本理论、基本观点和基本方法构成的科学体系;关于资本主义转化为社会主义以及社会主义和共产主义发展的普遍规律的学说;A
+马克思主义理论从广义上说是;不仅指马克思恩格斯创立的基本理论、基本观点和学说的体系，也包括继承者对它的发展;无产阶级争取自身解放和整个人类解放的学说体系;关于无产阶级斗争的性质、目的和解放条件的学说;马克思和恩格斯创立的基本理论、基本观点和基本方法构成的科学体系;A 
+作为中国共产党和社会主义事业指导思想的马克思主义是指;不仅指马克思恩格斯创立的基本理论、基本观点和学说的体系，也包括继承者对它的发展;无产阶级争取自身解放和整个人类解放的学说体系;关于无产阶级斗争的性质、目的和解放条件的学说;列宁创立的基本理论、基本观点和基本方法构成的科学体系;D 
+在19世纪三大工人运动中，集中反映工人政治要求的是;法国里昂工人起义;英国宪章运动;芝加哥工人起义;德国西里西亚纺织工人起义;B 
+马克思主义产生的经济根源是;工业革命;资本主义经济危机;资本主义社会生产力和生产关系的矛盾运动;阶级斗争;C 
+如果想在一个指定的元素后添加内容，下面哪个是实现该功能的？;append(content);appendTo(content);insertAfter(content);after(content);D
+在jquey中，如果想要从DOM中删除所有匹配的元素，下面哪一个是正确的？;delete();empty();remove();removeAll();C
+当一个文本框中的内容被选中时，想要执行指定的方法时，可以使用下面哪个事件来实现？;click(fn);change(fn);select(fn);bind(fn);C
+在jquery中想要实现通过远程http get请求载入信息功能的是下面的哪一个事件？;$.ajax();load(url);$.get(url);$. getScript(url);C
+下面不属于ajax事件的是？;ajaxComplete(callback) ;ajaxSuccess(callback) ;$.post(url) ;ajaxSend(callback);C
+在jquery中，如果想要获取当前窗口的宽度值，下面哪个是实现该功能的？;width();width(val);width;innerWidth();A
+如果需要匹配包含文本的元素，用下面哪种来实现？;text();contains();input();attr(name);B
+如果想要找到一个表格的指定行数的元素，用下面哪个方法可以快速找到指定元素？;text();get() ;eq();contents（）;C
+下面哪种不属于jquery的筛选？;过滤 ;自动 ;查找;串联;B
+如果想在一个指定的元素后添加内容，下面哪个是实现该功能的？;append(content) ;appendTo(content);insertAfter(content);after(content);B
+在jquey中，如果想要从DOM中删除所有匹配的元素，下面哪一个是正确的？;delete();empty();remove();removeAll();C
+在jquery中，想要给第一个指定的元素添加样式，下面哪一个是正确的？;first;eq(1) ;css(name);css(name,value);D
+在jquery中想要实现通过远程http get请求载入信息功能的是下面的哪一下事件？$.ajax();load(url);$.get(url);$. getScript(url);C
+下面不属于ajax事件的是？;ajaxComplete(callback);ajaxSuccess(callback) ;$.post(url) ;ajaxSend(callback);C
+当DOM加载完成后要执行的函数，下面哪个是正确的？;jQuery(expression, [context]);jQuery(html, [ownerDocument]) ;jQuery(callback);jQuery(elements);D
+下面哪一个是用来追加到指定元素的末尾的？;insertAfter();append();appendTo();after();C
+下面哪一个不是jquery对象访问的方法？;each(callback);size();index(subject);index();A
+下面哪种不是jquery的选择器？;基本选择器;后代选择器;类选择器;进一步选择器;C
+
