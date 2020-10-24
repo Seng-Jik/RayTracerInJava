@@ -27,7 +27,7 @@ public class RenderRunner {
     }
 
     public void run(Graphics target) {
-        for(var i : workers) i.start();
+        for(RenderWorker i : workers) i.start();
 
         while(true) {
             try {

@@ -17,8 +17,8 @@ public class Camera {
         int depth) {
 
         HitRecord hitRec = null;
-        for(var i : scene) {
-            var hitRecCur = i.hit(ray, maxT, minT);
+        for(SceneObject i : scene) {
+            HitRecord hitRecCur = i.hit(ray, maxT, minT);
             if(hitRecCur.isHit()) {
                 if(hitRec == null) hitRec = hitRecCur;
                 if(hitRecCur.getT() < hitRec.getT())
